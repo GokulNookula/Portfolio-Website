@@ -30,3 +30,55 @@
     align-items: center;
     margin: auto;
 }
+
+a{
+    /* This is in order to remove the bullet points from all the list of things */
+    text-decoration: none;
+    color: #fff;
+}
+
+/* This is in order to access li div inside the ul div */
+ul li{
+    list-style: none;
+    /* Change how you want the order of it to look like */
+    display: inline-block;
+}
+
+.header .logo a{
+    font-size: 35px;
+    /* This is in order to change how BOLD you want the text to be */
+    font-weight: 500;
+    letter-spacing: 2px; 
+}
+
+.header .logo a span{
+    color: #ff9301;
+    font-size: 45px;
+}
+
+.menubar .menu li a{
+    font-size: 21px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    /* This is so everytime we load the website up it slowly shows up the content */
+    transition: all 0.5s;
+}
+
+/* Adding some effects when you hover over each lsit element using a mouse */
+.menubar .menu li a:hover{
+    color: #ff9301;
+}
+
+/* So this is basically when we are inside that page it highlights it to show which list you are on */
+.active{
+    color: #ff9301;
+}
+
+.banner{
+    width: 80%;
+    height: 70%;
+    position: absolute;
+    top: 25%;
+    left: 150px;
+    color: #fff;
+}
