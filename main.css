@@ -13,3 +13,20 @@
     height: 100vh;
     background: gray;
 }
+
+.bg-img{
+    background-image: url(); /*insert url link for the image here */
+    background-repeat: no-repeat; /* change the repeat based on your liking */
+    background-size: ;
+    background-position: center center;
+}
+
+.header{
+    width: 80%;
+    height: 80px;
+    display: flex;
+    /* This is to add space between each content of the list */
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
