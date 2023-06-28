@@ -1,1 +1,15 @@
+@import url('');
 
+/* This is * element means this outline is used for any new styling made which is not mentioned */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: ;
+}
+
+/* .<- is how you specify if it is a class or not */
+.container{
+    width: 100%;
+    height: 100vh;
+    background: gray;
+}
