@@ -1,170 +1,61 @@
-@import url('');
-
-/* This is * element means this outline is used for any new styling made which is not mentioned */
-*{
-    margin: 0;
-    padding: 0;
-    font-family: ;
-}
-
-/* .<- is how you specify if it is a class or not */
-.container{
-    width: 100%;
-    height: 100vh;
-    background: gray;
-}
-
-.bg-img{
-    background-image: url("background.jpg"); /*insert url link for the image here */
-    background-repeat: no-repeat; /* change the repeat based on your liking */
-    background-size: ;
-    background-position: center center;
-}
-
-.header{
-    width: 80%;
-    height: 80px;
-    display: flex;
-    /* This is to add space between each content of the list */
-    justify-content: space-between;
-    align-items: center;
-    margin: auto;
-}
-
-a{
-    /* This is in order to remove the bullet points from all the list of things */
-    text-decoration: none;
-    color: #fff;
-}
-
-/* This is in order to access li div inside the ul div */
-ul li{
-    list-style: none;
-    /* Change how you want the order of it to look like */
-    display: inline-block;
-}
-
-.header .logo a{
-    font-size: 35px;
-    /* This is in order to change how BOLD you want the text to be */
-    font-weight: 500;
-    letter-spacing: 2px; 
-}
-
-.header .logo a span{
-    color: #ff9301;
-    font-size: 45px;
-}
-
-.menubar .menu li a{
-    font-size: 21px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    /* This is so everytime we load the website up it slowly shows up the content */
-    transition: all 0.5s;
-}
-
-/* Adding some effects when you hover over each lsit element using a mouse */
-.menubar .menu li a:hover{
-    color: #ff9301;
-}
-
-/* So this is basically when we are inside that page it highlights it to show which list you are on */
-.active{
-    color: #ff9301;
-}
-
-.banner{
-    width: 80%;
-    height: 70%;
-    position: absolute;
-    top: 25%;
-    left: 150px;
-    color: #fff;
-}
-
-.app-text{
-    width: 50%;
-    float: left;
-    margin: 30px 0 30px 40px;
-}
-
-.app-text h6{
-    font-size: 20px;
-    font-weight: 400;
-    margin: 0 0 20px;
-}
-
-.app-text h2{
-    font-size: 80px;
-    font-weight: 700;
-    margin: 0 0 15px;
-    /* The line-height property controls the vertical space between lines of text. 
-    It can accept various units of measurement, including 
-    numeric values, percentages, or even specific length 
-    units like pixels or ems. */
-    line-height: 1;
-    color: #fff;
-}
-
-.app-text h3{
-    font-size: 40px;
-    font-weight: 500;
-    margin: 0 0 15px;
-    /* The line-height property controls the vertical space between lines of text. 
-    It can accept various units of measurement, including 
-    numeric values, percentages, or even specific length 
-    units like pixels or ems. */
-    line-height: 1;
-    color: #ff9301;
-}
-
-.app-text p{
-    width: 500px;
-    font-size: 17px;
-    line-height: 25px;
-    color: #919191;
-}
-
-.social-box{
-    position: absolute;
-    right: 50px;
-    bottom: 50px;
-    width: 24px;
-}
-
-.social-icons a{
-    display: block;
-    margin-bottom: 20px;
-    text-align: center;
-    color: #bbb;
-    transition: all 0.5s;
-}
-
-.social-icons a:hover{
-    color: #ff9301;
-}
-
-.follow-label{
-    position: absolute;
-    bottom: 100%;
-    right: 0;
-    color: #bbb;
-    font-size: 19px;
-    line-height: 24px;
-    height: 24px;
-    white-space: nowrap;
-    transform-origin: 100% 0;
-    text-align: right;
-    transform:  rotate(90deg);
-}
-
-.follow-label :after{
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 0;
-    width: 50px;
-    height: 1px;
-    background: #ff9301;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel= "stylesheet" href = "about.css">
+</head>
+<body>
+    <div class = "container bg-img">
+        <header class = "header">
+            <div class = "logo">
+                <a href ="#">
+                    Portfolio
+                    <span>.</span>
+                </a> <!-- Change # to whatever link you want the website to take you to -->
+            </div>
+            <div class="menubar">
+                <ul class = "menu">
+                    <li>
+                        <a href = "#">Resume</a>
+                    </li>
+                    <li>
+                        <a href = "#">Projects</a>
+                    </li>
+                    <li>
+                        <a href = "#">Work Experience</a>
+                    </li>
+                    <li>
+                        <a class="active" href = "#">About</a>
+                    </li>
+                    <li>
+                        <a href = "#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="banner">
+            <div class="app-text">
+                <!-- h6 is used to add text into your website -->
+                <h6>Hello, my name is</h6>
+                <h2>Gokul Nookula</h2>
+                <h3>Software Engineer</h3>
+                <p>Add your basic information to introduce yourself
+                    like this
+                </p>
+                </div>
+            </div>
+        </div>
+        <div class="social-box">
+            <div class="follow-label">Follow Me</div>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
