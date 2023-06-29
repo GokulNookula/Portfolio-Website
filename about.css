@@ -15,7 +15,7 @@
 }
 
 .bg-img{
-    background-image: url(); /*insert url link for the image here */
+    background-image: url("background.jpg"); /*insert url link for the image here */
     background-repeat: no-repeat; /* change the repeat based on your liking */
     background-size: ;
     background-position: center center;
@@ -81,4 +81,90 @@ ul li{
     top: 25%;
     left: 150px;
     color: #fff;
+}
+
+.app-text{
+    width: 50%;
+    float: left;
+    margin: 30px 0 30px 40px;
+}
+
+.app-text h6{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 0 20px;
+}
+
+.app-text h2{
+    font-size: 80px;
+    font-weight: 700;
+    margin: 0 0 15px;
+    /* The line-height property controls the vertical space between lines of text. 
+    It can accept various units of measurement, including 
+    numeric values, percentages, or even specific length 
+    units like pixels or ems. */
+    line-height: 1;
+    color: #fff;
+}
+
+.app-text h3{
+    font-size: 40px;
+    font-weight: 500;
+    margin: 0 0 15px;
+    /* The line-height property controls the vertical space between lines of text. 
+    It can accept various units of measurement, including 
+    numeric values, percentages, or even specific length 
+    units like pixels or ems. */
+    line-height: 1;
+    color: #ff9301;
+}
+
+.app-text p{
+    width: 500px;
+    font-size: 17px;
+    line-height: 25px;
+    color: #919191;
+}
+
+.social-box{
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+    width: 24px;
+}
+
+.social-icons a{
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #bbb;
+    transition: all 0.5s;
+}
+
+.social-icons a:hover{
+    color: #ff9301;
+}
+
+.follow-label{
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    color: #bbb;
+    font-size: 19px;
+    line-height: 24px;
+    height: 24px;
+    white-space: nowrap;
+    transform-origin: 100% 0;
+    text-align: right;
+    transform:  rotate(90deg);
+}
+
+.follow-label :after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 50px;
+    height: 1px;
+    background: #ff9301;
 }
